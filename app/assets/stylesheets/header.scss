@@ -1,0 +1,18 @@
+.header {
+  border: 2px solid navy;
+  padding: 5px;
+  background-color: #9999dd;
+  color: #fff;
+
+  .signed-in {
+    display: inline;
+    margin: 10px;
+    // float: right;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  a.sign-out-link, a.sign-in-link {
+    color: white;
+  }
+}

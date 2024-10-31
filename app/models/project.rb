@@ -10,4 +10,11 @@ class Project < ApplicationRecord
     work_started: 30,
     work_completed: 40
   }
+
+  enum project_type: {
+    single_family_home: 0,
+    multi_family_home: 1,
+    condominium: 2,
+    commercial: 3
+  }
 end

@@ -2,11 +2,12 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => { :sessions => "sessions" }
   namespace :api do
     namespace :v1 do
-      resources :quotes, only: %i[index create show destroy]
+      resources :projects, only: %i[index create update show destroy]
     end
   end
   root controller: 'homepage', action: 'index'
 
+  get '/*path' => 'homepage#index'
   get 'homepage/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
